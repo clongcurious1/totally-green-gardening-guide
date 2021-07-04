@@ -1,4 +1,16 @@
+body {
+  background-color: white;
+}
 
+h1, h2 {
+  color: #99008a;
+  font-family: ‘Ropa Sans’, sans-serif;
+}
+
+p {
+  color: #241722;
+  font-family: ‘Poppins’, sans-serif;
+}
 
 .button-wrapper {
     display: block;
