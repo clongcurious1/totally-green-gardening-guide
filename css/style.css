@@ -1,48 +1,78 @@
-header {
-  box-sizing: border-box;
-} 
-
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: snow;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+.every-header {
+  height: 20vh;
+  background-color: lawngreen;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  display: block;
+  overflow: visible;
+  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40vh;
+ }
+
+#below-hero {
+  height: 30vh;
+  text-align: center;
 }
 
 h1 {
   color: rgb(1, 22, 1);
-  font-family: ‘Ropa Sans’, sans-serif;
+  text-align: center;
 }
 
 h2 {
   color: rgb(1, 59, 1)
+  text-align: center;
 }
 
 p {
   color: black;
-  font-family: ‘Poppins’, sans-serif;
+ }
+
+a:link { 
+  color: darkgreen; 
+} 
+
+a:hover { 
+  color: firebrick;
 }
 
-.button-wrapper {
-    display: block;
-    text-align: center;
-  }
+.every-button {
+  font-size: 32px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  background-color: tomato;
+  border-style: solid;
+  border-color: firebrick;
+  border-width: 2px;
+  color:snow;
+  text-align: center;
+  box-shadow: 2px 2px 2px darkolivegreen;
+  display:inline-block;
+ } 
 
-.button {
-    border: none;
-    border-radius: 3em;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-    display: inline-block;
-    font-size: 1em;
-    padding: 1em 2em;
-    width: auto;
-    color: hsl(300, 100%, 98%);
-    background-color: rgb(70, 2, 70);
-  } 
-
-  .footer {
+  .every-footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: lawngreen;
-    color: white;
-    text-align: center;}
+    color: snow;
+    text-align: center;
+    height: 10vh;}
     
