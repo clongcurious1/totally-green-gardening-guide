@@ -3,16 +3,25 @@ body {
   background-color: snow;
 }
 
+.wrapper {
+  display: grid;
+}
+
+header {
+  background-color: lawngreen; 
+}
+
+.header-box 
+
+#logo
+
+nav
+
 a { 
   text-decoration: none; 
 }
 
-.every-header {
-  height: 20vh;
-  background-color: lawngreen;
-}
-
-.hero {
+.hero-box {
   position: relative;
 }
 
@@ -22,11 +31,9 @@ a {
   z-index: -1;
   margin-left: auto;
   margin-right: auto;
-  height: 40vh;
- }
+}
 
-#below-hero {
-  height: 30vh;
+.main-box {
   text-align: center;
 }
 
@@ -52,6 +59,8 @@ a:hover {
   color: firebrick;
 }
 
+button
+
 .every-button {
   font-size: 32px;
   padding: 14px 40px;
@@ -64,15 +73,15 @@ a:hover {
   text-align: center;
   box-shadow: 2px 2px 2px darkolivegreen;
   display:inline-block;
- } 
+} 
 
-  .every-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lawngreen;
-    color: snow;
-    text-align: center;
-    height: 10vh;}
+.footer-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lawngreen;
+  color: snow;
+  text-align: center;
+}
     
