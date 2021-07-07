@@ -88,6 +88,9 @@ a {
 
 .main-instructions {
   text-align: center;
+  background-color: azure;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 h1 {
@@ -112,17 +115,15 @@ a:hover {
   color: firebrick;
 }
 
-.every-button {
-  font-size: 32px;
-  padding: 14px 40px;
-  border-radius: 12px;
-  background-color: tomato;
+.retro-button {
+  font-size: 26px;
+  padding: 14px 48px;
+  background-color: snow;
   border-style: solid;
-  border-color: firebrick;
-  border-width: 2px;
-  color:snow;
+  border-color: rgb(1, 22, 1);
+  border-width: 6px;
+  color:rgb(1, 22, 1) ;
   text-align: center;
-  box-shadow: 2px 2px 2px darkolivegreen;
   display:inline-block;
 } 
 
