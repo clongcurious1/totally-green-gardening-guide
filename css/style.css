@@ -173,8 +173,29 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   color: snow;
 }
 
-conditions-link {
+.conditions-link {
   color: snow;
+}
+
+/*Style SECTIONS on Garden Styles.Plants page*/
+.section-plants{
+  
+}
+
+.veggie-garden{
+
+}
+
+.cutting-garden{
+
+}
+
+.foilage-garden{
+
+}
+
+.rain-garden{
+  
 }
 
 /*Style TABLES (Main)*/
