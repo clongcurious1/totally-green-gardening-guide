@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totally Green Garden Guide Garden Styles Recommended Plants</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="../js/planttoggle.js"></script>
 </head>
 <body>
     <!--Hugs all page content, including the footer-->
@@ -36,8 +37,8 @@
                 <div class="main-instructions">
                     <h2>The secret to a Totally Green garden is choosing No-Fail plants that match your growing conditions.</h2>
                         <p>We've paired each site condition below with a recommended garden style.</p>
-                        <p>Each garden style also has a list of No-Fail plants.</p>
-                        <p>The No-Fail plants are hardy in Garden Zones 3-8.</p>
+                        <p>Each garden style also has a (hidden) list of No-Fail plants.</p>
+                        <p>These No-Fail plants are hardy in Garden Zones 3-8.</p>
                 </div>
                     <section class="section-plants">
                         <div class="cutting-garden">
@@ -45,28 +46,32 @@
                             <h3>SUNNY & DRY</h3>
                             <p><strong>STYLE: CUTTING GARDEN</strong></p>
                             <p>If you love making fresh flower arrangements, planting a cutting garden ensures you have lots of beautiful, homegrown blooms to work with.</p>
-                            <p><strong>View No-Fail Plants ></strong></p>
-                            <table class="table-plants">
-                                <tr>
-                                  <th>Cutting Garden</th>
-                                </tr>
-                                <tr>
-                                  <td>Black-Eyed Susan</td>
-                                </tr>
-                                <tr>
-                                  <td>Cosmos</td>
-                                </tr>
-                                <tr>
-                                  <td>Pincushion</td>
-                                </tr>
-                                <tr>
-                                  <td>Yarrow</td>
-                                </tr>
-                                <tr>
-                                  <td>Zinnia</td>
-                                </tr>
-                              </table>                        
+                            <button onclick="myFunction()" class="plant-button">Show (or Hide) No-Fail Plants</button>
+                              <!--This div hugs my plant table in preparation for toggle hide show-->
+                              <div id="plantToggle">
+                                <table class="table-plants">
+                                  <tr>
+                                    <th>Cutting Garden</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Black-Eyed Susan</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Cosmos</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pincushion</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Yarrow</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Zinnia</td>
+                                  </tr>
+                                </table> 
+                              </div>  <!--This is where my plant table toggle div ends-->                       
                         </div>
+
                             <div class="veggie-garden">
                                 <img src="../images/veggies.3by2.852H.cGarnier-910GanwBoew-unsplash.jpg" alt="Vegetable Garden"/>
                                 <h3>SUNNY & DAMP</h3>

@@ -218,6 +218,18 @@ table, th, td {
   background-color: greenyellow;
 }
 
+.plant-button {
+  background-color: chartreuse;
+  color: black;
+  font-size: medium;
+  margin-bottom: 25px;
+  padding: 25px;
+}
+
+#plantToggle {
+  display: none;
+}
+
 /*Styles for GENERAL items in the Main*/
 
 a { 
