@@ -224,9 +224,22 @@ table, th, td {
   font-size: medium;
   margin-bottom: 25px;
   padding: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#plantToggle {
+#plantToggle1 {
+  display: none;
+}
+
+#plantToggle2 {
+  display: none;
+}
+
+#plantToggle3 {
+  display: none;
+}
+
+#plantToggle1 {
   display: none;
 }
 
