@@ -200,6 +200,11 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 }
 
 /*Style TABLES (Main)*/
+table, th, td {
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
 
 /*Styles for GENERAL items in the Main*/
 
