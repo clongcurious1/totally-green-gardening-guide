@@ -71,8 +71,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  text-align: center;
-}
+ }
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -85,6 +84,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 
 .hero-h1 {
   color: snow;
+  text-align: center;
 }
 
 /*Style Hero Image - Conditions page*/
@@ -132,56 +132,55 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style FORMS (Main)*/
 
 /*Style SECTIONS (Main)*/
-.conditions-bar1 {
-  background-color: orange;
+.conditions-bars {
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 10px;
 }
 
+.conditions-bar1 {
+  background-color: orange;
+  padding-top: 2%;
+  padding-bottom: 2%;
+ }
+
 .conditions-bar2 {
   background-color: darkmagenta;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .conditions-bar3 {
   background-color: green;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-}
+  padding-top: 2%;
+  padding-bottom: 2%;
+ }
 
 .conditions-bar4 {
   background-color: indigo;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .conditions-h2 {
   color: snow;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .p-conditions {
   color: snow;
+  text-align: center;
 }
 
 .conditions-link {
-  color: snow;
+  color: black;
 }
 
 /*Style SECTIONS on Garden Styles.Plants page*/
-/*This is a CSS GRID area, not FLEXBOX*/
-/*Applying CSS Grid properties to parent div .section-plants also sets grid properties for the child divs*/
 .section-plants{
-  
+  text-align: center;
 }
 
 .veggie-garden{
@@ -203,12 +202,14 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style TABLES (Main)*/
 
 /*Styles for GENERAL items in the Main*/
+
 a { 
   text-decoration: none; 
+  color: black
  }
 
 a:link { 
-  color: darkgreen; 
+  color: black; 
 } 
 
 a:hover { 
