@@ -65,7 +65,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /* Style Hero Image -Home Page */
 .hero-image {
   /* The image used PLUS "linear-gradient" to add a darker transparent layer over the image so text iseasier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/poppies.1057t.corina-ardeleanu-sWlxCweDzzs-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/poppies-1800x1200-c.jpg");
   background-color: chartreuse; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -181,22 +181,6 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style SECTIONS on Garden Styles.Plants page*/
 .section-plants{
   text-align: center;
-}
-
-.veggie-garden{
-
-}
-
-.cutting-garden{
-
-}
-
-.foilage-garden{
-
-}
-
-.rain-garden{
-  
 }
 
 /*Style TABLES (Main)*/
