@@ -112,7 +112,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style Hero Image - Pests page*/
 .hero-image-pests {
   /* The image used PLUS "linear-gradient" to add a darker transparent layer over the image so text iseasier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ButterflyBest.Plantspg.1057t.james-morden-Gw9ubabngJ0-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pest-hero-1800x1200-c.jpg");
   background-color: chartreuse; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */

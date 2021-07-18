@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totally Green Garden Guide Pests Pollinators</title>
-    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/basic-styles.css" type="text/css">
 </head>
 <body>
-    <div class="page-container">
-        <div class="content-wrap">
+    <div class="page-container"><!--This div hugs everything in the body, including the footer-->
+        <div class="content-wrap"><!--This div hugs the body elements, EXCLUDES the footer-->
             <header>
                 <div class="header">
                     <a href="index.html" class="logo">Totally Green Gardening Guide</a>
@@ -22,25 +22,111 @@
                         </div>
                 </div>
             </header>   
-    <main>
-        <div class="hero-image-pests">
-            <div class="hero-text">
-            <h1 class="hero-h1">Pests, Predators, and Pollinators</h1>
-            </div>
-        </div>
-        <div class="main-instructions">
-            <h2><A>Creating a Totally Green garden is not for the faint of heart.</h2>
-                <p>Look closely at the bugs in the soil, on your plants, and in the air.</p>
-                <p>Pollinators and predators are your new best friends.</p>
-                <p>Nobody likes a pest.</p>
-        </div>
-        </div>
-</main>  
-    <div class="footer-box">
-        <footer>
-            <p>Code Louisville Front-End Web Development Project 2021</p>
-        </footer>
-    </div>
-    </div>
+            <main>
+                <div class="hero-image-pests">
+                    <div class="hero-text">
+                        <h1 class="hero-h1">Pests, Predators, and Pollinators</h1>
+                    </div>
+                </div>
+                <div class="main-instructions">
+                    <h2><A>Creating a Totally Green garden is not for the faint of heart.</h2>
+                        <p>Look closely at the bugs in the soil, on your plants, and in the air.</p>
+                        <p>Pollinators and predators are your new best friends.</p>
+                        <p>Nobody likes a <em>pest</em>.</p>
+                </div><!--Instructions div now closed-->
+
+                <div class=”flip-cards-wrapper”><!--This div wraps all six Flip Cards-->
+                    <div class="flip-card-single"><!--This div wraps ONE flip card-->
+                        <div class="flip-card-inner"><!--Flip Card Inner contains FRONT and BACK divs-->
+                            <div class="flip-card-front">
+                                <img src="../images/pests-aphids-800x800-c.jpg"  alt=”Aphid” style="width:400px;height:400px;">
+                            </div><!--Flip card front div closes here, only holds image?-->
+                                <div class="flip-card-back">
+                                    <h2>APHID</h2>
+                                        <p><em><strong>Pest</strong></em></p>
+                                            <p> Aphids attack various vegetables, legumes, stone fruit crops, roses, apples, and ornamentals.</p>
+                                            <p>Non-toxic aphid control measures include spraying affected plants with a hose and planting companion plants to attract beneficial predators like Ladybugs and Lacewings.</p>
+                                </div><!--Flip card BACK div closes here-->
+                        </div><!--Flip card INNER div closes here-->
+                    </div><!--Flip Card SINGLE div, for first card in the series, closes here-->
+                    
+                    <div class="flip-card-single"><!--Embraces ALL of Flip Card 2-->
+                        <div class="flip-card-inner"><!--Embraces front and back of card 2-->
+                            <div class="flip-card-front-"><!--Embraces front of card 2-->
+                                <img src="../images/pests-butterfly-800x800-c.jpg" alt="Butterfly" style="width:400px;height:400px;">
+                            </div><!--Closes FRONT of card 2-->
+                            <div class="flip-card-back"><!--Embraces BACK of card 2-->
+                                <h2>BUTTERFLY</h2>
+                                    <p><em><strong>Pollinator</strong></em></p>
+                                    <p> Butterflies visit certain flowers to feed on nectar. As they feed, they pick-up pollen on their bodies which they distribute as they move about the garden.</p>
+                                    <p>Nectar favorites include smooth aster, butterfly bush, coneflower, sedum, and zinnia. Larval host plants include ironweed, milkweed, hollyhock, and mallow.
+                            </div><!--Closes BACK of card 2-->
+                        </div><!--Flip Card Inner closes here-->
+                    </div><!--Entirely closes all pieces of Card 2-->
+                    
+                    <div class="flip-card-single">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../images/pests-cutworm-800x800-c.jpg" alt="Cutworm" style="width:400px;height:400px;">
+                            </div>
+                                <div class="flip-card-back">
+                                    <h2>CUTWORM</h2>
+                                        <p><em><strong>Pest</strong></em></p>
+                                        <p>Cutworms (larval moths) feed (mostly at dusk) on vegetables and flowers, targeting young seedlings and transplants.</p>
+                                        <p>Non-toxic methods of controlling cutworms include aluminum foil plant “collars” at the base of new transplants and planting companion plants to attract beneficial insects (lacewings, parasitic wasps).</p>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card-single">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../images/pests-honeybee-800x800-c.jpg"  alt="Honeybee" style="width:400px;height:400px;">
+                            </div>
+                                <div class="flip-card-back">
+                                    <h2>HONEYBEE</h2>
+                                    <p><em><strong>Pollinator</strong></em></p>
+                                    <p>Honeybees are super-important pollinators for flowers, fruits, and vegetables.</p>
+                                    <p>Support Honeybees by planting flowers and herbs – like lavender and bluebells - that produce nectar.</p>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flip-card-single">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../images/pests-lacewing-800x800-c.jpg" alt="Green Lacewing" style="width:400px;height:400px;">
+                            </div>
+                                <div class="flip-card-back">
+                                    <h2>LACEWING</h2>
+                                    <p><em><strong>Predator</strong></em></p>
+                                    <p> Green lacewing larvae prey upon soft-bodies garden pests, including caterpillars and aphids.</p>
+                                    <p>Lacewings and ladybugs can be encouraged to visit by planting candytuft, sunflowers, and marigolds.</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card-single">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../images/pests-ladybug-800x800-c.jpg" alt="Ladybug" style="width:400px;height:400px;">
+                            </div>
+                                <div class="flip-card-back">
+                                    <h2>LADYBUG</h2>
+                                    <p><em><strong>Predator</strong></em></p>
+                                    <p> Despite their adorable appearance, ladybug (Lady Beetle) larvae are ferocious predators, feasting predominantly on aphids. </p>
+                                    <p>Planting candytuft, sunflowers, and marigolds will increase ladybug visits to your garden.</p>  
+                                </div>
+                        </div>
+                    </div>
+                </div><!--Flip Cards Wrapper, all six cards, closes here-->                 
+        </div><!-- This closes the Content Wrapper for everything but the Footer-->
+            </main>  
+                <div class="footer-box">
+                    <footer>
+                        <p>Code Louisville Front-End Web Development Project 2021</p>
+                    </footer>
+                </div><!--This closes Footer div-->
+    </div><!--This closes the Page Container div-->
 </body>
 </html>
