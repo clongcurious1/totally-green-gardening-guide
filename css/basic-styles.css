@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-/*This CHILD WRAPPER embraces body content - including header/nav - but NOT the footer*/
+/*This CHILD WRAPPER embraces body content - including header/nav - EXCEPT the footer*/
 .content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
 }
@@ -54,6 +54,7 @@ body {
     text-align: left;
     text-decoration: none; 
   }
+
   .header-right {
     float: none;
   }
@@ -90,7 +91,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style Hero Image - Conditions page*/
 .hero-image-conditions {
   /* The image used PLUS "linear-gradient" to add a darker transparent layer over the image so text iseasier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/SunRainGrass.16x9.johnny-mcclung-kGZ7uFl0qkk-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/conditions-hero-wet-grass-1800x1200-c.jpg");
   background-color: chartreuse; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -178,12 +179,12 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   color: black;
 }
 
-/*Style Main items on Plants page only*/
+/*PLANTS page - style Main items*/
 .section-plants{
   text-align: center;
 }
 
-/*Style TABLES (Main)*/
+/*PLANTS page - style TABLES (Main)*/
 table, th, td {
   width: 100%;
   border: 1px solid black;
@@ -227,26 +228,36 @@ table, th, td {
   display: none;
 }
 
-/*Style Main items on Pests page only*/
-/* Two columns side by side */
-.column {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+/*PESTS page - style Main items*/
+/*Container for flexboxes, adjusts all 6 cards*/
+.row-pests {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
+/* Create three equal columns */
+.column {
+  flex: 33.3%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from three columns to two columns */
+@media screen and (max-width: 992px) {
   .column {
-    width: 100%;
-    display: block;
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row-pests {
+    flex-direction: column;
   }
 }
 
 /* Add some shadows to create a card effect */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px 0 darkolivegreen;
 }
 
 /* Some left and right padding inside the container */
@@ -255,7 +266,7 @@ table, th, td {
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container::after, .row-pests::after {
   content: "";
   clear: both;
   display: table;
@@ -266,7 +277,7 @@ table, th, td {
   text-align: center;
 }
 
-/*Styles for GENERAL items in the Main*/
+/*Styles for GENERIC items in the Main*/
 
 a { 
   text-decoration: none; 
