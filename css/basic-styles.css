@@ -231,27 +231,27 @@ table, th, td {
 /*PESTS page - style Main items*/
 /*Container for flexboxes, adjusts all 6 cards*/
 .row-pests {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; 
+  flex-wrap: wrap; 
 }
 
-/* Create three equal columns */
+/*Mobile First! Starting with ONE column.*/
 .column {
-  flex: 33.3%;
+  flex: 100%;
   padding: 20px;
 }
 
-/* On screens that are 992px wide or less, go from three columns to two columns */
-@media screen and (max-width: 992px) {
+/*Tablets and Laptops: Shift from one column to two columns*/
+@media screen and (min-width: 800px) {
   .column {
     flex: 50%;
   }
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row-pests {
-    flex-direction: column;
+/*Hi-res laptops, desktops, etc.: Shift from two columns to three columns*/
+@media screen and (min-width: 1200px) {
+  .column {
+    flex: 33.3%;
   }
 }
 
@@ -277,7 +277,7 @@ table, th, td {
   text-align: center;
 }
 
-/*Styles for GENERIC items in the Main*/
+/*Styles for GENERIC items in the Main across pages not broken out above*/
 
 a { 
   text-decoration: none; 
@@ -320,8 +320,16 @@ p {
   background-color: lawngreen;
   color: snow;
   text-align: center;
+  font-size: smaller;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem;            /* Footer height */
   }
+
+ /*Hide the FOOTER on screens smaller than 500px wide*/
+ @media screen and (max-width: 500px) {
+  .footer-box {
+    display: none;
+  }
+}
