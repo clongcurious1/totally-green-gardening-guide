@@ -9,168 +9,172 @@
     <script src="../js/planttoggle.js"></script>
 </head>
 <body>
-    <!--Hugs all page content, including the footer-->
-    <div class="page-container">
-        <!--Hugs all body content EXCEPT the footer-->
-        <div class="content-wrap">
-            <header>
-                <!--Hugs the header: logo and nav-->
-                <div class="header">
-                    <a href="index.html" class="logo">Totally Green Gardening Guide</a>
-                        <div class="header-right">
-                          <a href="conditions.html">Conditions</a>
-                          <a href="plants.html">Plants</a>
-                          <a href="pests.html">Pests</a>
-                          <a href="contact.html">Contact</a>
-                        </div>
-                </div>
-            </header> 
-        <main>
-            <!--Hugs the hero (background) image and overlay text-->
-            <div class="hero-image-plants">
-                <div class="hero-text">
-                    <h1 class="hero-h1">Garden Styles and No-Fail Plants</h1>
-                </div>
+  <!--Hugs all page content, including the footer-->
+  <div class="page-container">
+    <!--Hugs all body content EXCEPT the footer-->
+    <div class="content-wrap">
+      <header>
+        <!--Hugs the header: logo and nav-->
+        <div class="header">
+          <a href="index.html" class="logo">Totally Green Gardening Guide</a>
+            <div class="header-right">
+              <a href="conditions.html">Conditions</a>
+              <a href="plants.html">Plants</a>
+              <a href="pests.html">Pests</a>
+              <a href="contact.html">Contact</a>
             </div>
-                <!--Hugs instructions section under each hero image-->
-                <div class="main-instructions">
-                    <h2>The secret to a Totally Green garden is choosing No-Fail plants that match your growing conditions.</h2>
-                        <h3>We've paired each site condition below with a recommended garden style.</h3>
-                        <h3>Each garden style also has a (hidden) list of No-Fail plants.</h3>
-                        <h3>These No-Fail plants are hardy in Garden Zones 3-8.</h3>
-                </div>
-                    <section class="section-plants">
-                        <div class="cutting-garden">
-                            <img src="../images/CuttingGarden3x2at852tall.THocking.unsplash.jpg" alt="Cutting Garden"/>
-                            <h3 id="jump-anchor-1">SUNNY & DRY</h3>
-                            <p><strong>STYLE: CUTTING GARDEN</strong></p>
-                            <p>If you love making fresh flower arrangements, planting a cutting garden ensures you have lots of beautiful, homegrown blooms to work with.</p>
-                            <button onclick="myFunction('plantToggle1')" class="plant-button">Show (or Hide) No-Fail Plants</button>
-                              <!--This div hugs my plant table in preparation for toggle hide show-->
-                              <div id="plantToggle1">
-                                <table class="table-plants">
-                                  <tr>
-                                    <th>Cutting Garden</th>
-                                  </tr>
-                                  <tr>
-                                    <td>Black-Eyed Susan</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Cosmos</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Pincushion</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Yarrow</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Zinnia</td>
-                                  </tr>
-                                </table> 
-                              </div>  <!--This is where my plant table toggle1 div ends-->                       
-                        </div>
+        </div><!--closes the header, logo, nav div-->
+      </header> 
+        <main>
+          <!--Hugs the hero (background) image and overlay text-->
+            <div class="hero-image-plants">
+              <div class="hero-text">
+                <h1 class="hero-h1">Garden Styles and No-Fail Plants</h1>
+              </div>
+            </div>
+              <!--Hugs instructions section under each hero image-->
+              <div class="main-instructions">
+                <h2>The secret to a Totally Green garden is choosing No-Fail plants that match your growing conditions.</h2>
+                  <h3>We've paired each site condition below with a recommended garden style.</h3>
+                  <h3>Each garden style also has a (hidden) list of No-Fail plants.</h3>
+                  <h3>These No-Fail plants are hardy in Garden Zones 3-8.</h3>
+                    <hr style="height:4px; width:50%; border-width:0; color:darkslategrey; background-color:darkslategrey">
+              </div><!--Closes Instructions section-->
+        </main>
+            <div class="section-plants-container"><!--encloses all 4 tables in this sectiion-->
+              <div class="cutting-garden"><!--wraps all cutting garden elements-->
+                <img src="../images/plants-blackeyedsusans-rev3-1200x600-c.jpg" alt="Cutting Garden Black-Eyed Susans" class="plant-pic-center">
+                <h3 id="jump-anchor-1">SUNNY & DRY</h3>
+                  <p><strong>STYLE: CUTTING GARDEN</strong></p>
+                  <p>If you love making fresh flower arrangements, planting a cutting garden ensures you have lots of beautiful, homegrown blooms to work with.</p>
+                    <button onclick="myFunction('plantToggle1')" class="plant-button">Show (or Hide) No-Fail Plants</button>
+                      <!--This div hugs my plant table in preparation for toggle hide show-->
+                      <div id="plantToggle1">
+                        <table class="table-plants">
+                          <tr>
+                            <th>Cutting Garden</th>
+                          </tr>
+                          <tr>
+                            <td>Black-Eyed Susan</td>
+                          </tr>
+                          <tr>
+                            <td>Cosmos</td>
+                          </tr>
+                          <tr>
+                            <td>Pincushion</td>
+                          </tr>
+                          <tr>
+                            <td>Yarrow</td>
+                          </tr>
+                          <tr>
+                            <td>Zinnia</td>
+                          </tr>
+                        </table> 
+                      </div><!--This is where my plant table toggle1 div ends-->
+                        <hr style="height:4px; width:50%; border-width:0; color:darkslategrey; background-color:darkslategrey">                        
+              </div><!--closes Cutting Garden div-->
 
-                            <div class="veggie-garden">
-                                <img src="../images/veggies.3by2.852H.cGarnier-910GanwBoew-unsplash.jpg" alt="Vegetable Garden"/>
-                                <h3 id="jump-anchor-2">SUNNY & DAMP</h3>
-                                <p><strong>STYLE: VEGETABLE GARDEN</strong></p>  
-                                <p>Take it from us, "start small." Plan your plot based on the Companion Planting principle. Add flowers that attract beneficial insects.</p>
-                                <button onclick="myFunction('plantToggle2')" class="plant-button">Show (or Hide) No-Fail Plants</button>
-                              <!--This div hugs my plant table in preparation for toggle hide show-->
-                              <div id="plantToggle2">
-                                <table class="table-plants">
-                                    <tr>
-                                      <th>Vegetable Garden</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Radish</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Kale</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Zucchini</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Tomatoes</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Green Beans</td>
-                                    </tr>
-                                  </table>  
-                              </div><!--This marks end of Table Toggle2 div-->             
-                        </div>
+                <div class="veggie-garden">
+                  <img src="../images/plants-vegetables-1200x600-c.jpg" alt="Vegetables Displayed at Farmer's Market" class="plant-pic-center">
+                  <h3 id="jump-anchor-2">SUNNY & DAMP</h3>
+                    <p><strong>STYLE: VEGETABLE GARDEN</strong></p>  
+                    <p>Take it from us, "start small." Plan your plot based on the Companion Planting principle. Add flowers that attract beneficial insects.</p>
+                      <button onclick="myFunction('plantToggle2')" class="plant-button">Show (or Hide) No-Fail Plants</button>
+                        <!--This div hugs my plant table in preparation for toggle hide show-->
+                        <div id="plantToggle2">
+                          <table class="table-plants">
+                            <tr>
+                              <th>Vegetable Garden</th>
+                            </tr>
+                            <tr>
+                              <td>Radish</td>
+                            </tr>
+                            <tr>
+                              <td>Kale</td>
+                            </tr>
+                            <tr>
+                              <td>Zucchini</td>
+                            </tr>
+                            <tr>
+                              <td>Tomatoes</td>
+                            </tr>
+                            <tr>
+                              <td>Green Beans</td>
+                            </tr>
+                          </table>  
+                        </div><!--This closes out plantToggle2-->  
+                          <hr style="height:4px; width:50%; border-width:0; color:darkslategrey; background-color:darkslategrey">          
+                </div><!--Closes out Veggie elements-->
 
-                            <div class="foilage-garden">
-                                <img src="../images/fern.pixabay.starter.jpg" alt="Foilage Garden"/>
-                                <h3 id="jump-anchor-3">SHADY & DRY</h3>
-                                <p><strong>STYLE: FOILAGE GARDEN</strong></p> 
-                                <p>You don't need flowers to create visual impact. Plant in clumps, massing 3-5 of the same plant together. Repition of texture and color will bring your foilage garden to vibrant life.</p>
-                                <button onclick="myFunction('plantToggle3')" class="plant-button">Show (or Hide) No-Fail Plants</button>
-                                <!--This div hugs my plant table in preparation for toggle hide show-->
-                                <div id="plantToggle3">
-                                  <table class="table-plants">
-                                    <tr>
-                                      <th>Foilage Garden</th>
-                                    </tr>
-                                    <tr>
-                                      <td>Astilbe</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Hosta</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Coral Bells</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Japanese Painted Fern</td>
-                                    </tr>
-                                    <tr>
-                                      <td>English Ivy</td>
-                                    </tr>
-                                  </table>
-                                </div><!--This marks end of Table Toggle3 div--> 
-                            </div>
+                  <div class="foilage-garden">
+                    <img src="../images/plants-foliage-1200x600-c.jpg" alt="Ferns in Foliage Garden" class="plant-pic-center">
+                    <h3 id="jump-anchor-3">SHADY & DRY</h3>
+                      <p><strong>STYLE: FOILAGE GARDEN</strong></p> 
+                      <p>You don't need flowers to create visual impact. Plant in clumps, massing 3-5 of the same plant together. Repition of texture and color will bring your foilage garden to vibrant life.</p>
+                        <button onclick="myFunction('plantToggle3')" class="plant-button">Show (or Hide) No-Fail Plants</button>
+                          <!--This div hugs my plant table in preparation for toggle hide show-->
+                          <div id="plantToggle3">
+                            <table class="table-plants">
+                              <tr>
+                                <th>Foilage Garden</th>
+                              </tr>
+                              <tr>
+                                <td>Astilbe</td>
+                              </tr>
+                              <tr>
+                                <td>Hosta</td>
+                              </tr>
+                              <tr>
+                                <td>Coral Bells</td>
+                              </tr>
+                              <tr>
+                                <td>Japanese Painted Fern</td>
+                              </tr>
+                              <tr>
+                                <td>English Ivy</td>
+                              </tr>
+                            </table>
+                                  </div><!--This marks end of Table Toggle3 div--> 
+                                <hr style="height:4px; width:50%; border-width:0; color:darkslategrey; background-color:darkslategrey">  
+                  </div><!--Marks end of all Foliage elements-->
                                 
-                                <div class="rain-garden">
-                                    <img src="../images/LiatrisKeep.3to2.852t.eNavarro-CiV-G-bbQOU-unsplash.jpg" alt="Rain Garden"/>
-                                    <h3 id="jump-anchor-4">SHADY & DAMP</h3>
-                                    <p><strong>STYLE: RAIN GARDEN</strong></p> 
-                                    <p>Planted with grasses and flowering perennials, rain gardens can be a cost-effective and beautiful way to recycle runoff from roofs and driveways.</p>
-                                    <button onclick="myFunction('plantToggle4')" class="plant-button">Show (or Hide) No-Fail Plants</button>
-                                    <!--This div hugs my plant table in preparation for toggle hide show-->
-                                    <div id="plantToggle4">
-                                      <table class="table-plants">
-                                        <tr>
-                                          <th>Rain Garden</th>
-                                        </tr>
-                                        <tr>
-                                          <td>Coneflower</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Liatris</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Switchgrass</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Rose Mallow</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Blue Flag Iris</td>
-                                        </tr>
-                                      </table>
-                                    </div><!--This marks end of Table Toggle4 div--> 
-                                </div>
-                    </section>
-        </div><!--This is where the CONTENT WRAPPER ends-->       
-        </main>  
-    <div class="footer-box">
-        <footer>
-            <p>Code Louisville Front-End Web Development Project 2021</p>
-        </footer>
-    </div><!--This is where the FOOTER DIV ends-->
-    </div><!--This is where the PAGE CONTAINER ends-->
+                    <div class="rain-garden">
+                      <img src="../images/plants-raingarden-1200x600-c.jpg" alt="Liatris in Rain Garden" class="plant-pic-center">
+                      <h3 id="jump-anchor-4">SHADY & DAMP</h3>
+                        <p><strong>STYLE: RAIN GARDEN</strong></p> 
+                        <p>Planted with grasses and flowering perennials, rain gardens can be a cost-effective and beautiful way to recycle runoff from roofs and driveways.</p>
+                          <button onclick="myFunction('plantToggle4')" class="plant-button">Show (or Hide) No-Fail Plants</button>
+                            <!--This div hugs my plant table in preparation for toggle hide show-->
+                            <div id="plantToggle4">
+                              <table class="table-plants">
+                                <tr>
+                                  <th>Rain Garden</th>
+                                </tr>
+                                <tr>
+                                  <td>Coneflower</td>
+                                </tr>
+                                <tr>
+                                  <td>Liatris</td>
+                                </tr>
+                                <tr>
+                                  <td>Switchgrass</td>
+                                </tr>
+                                <tr>
+                                  <td>Rose Mallow</td>
+                                </tr>
+                                <tr>
+                                  <td>Blue Flag Iris</td>
+                                </tr>
+                              </table>
+                    </div><!--This marks end of Table Toggle4 div-->                                  
+            </div><!--This closes the 4Table section-->                  
+    </div><!--This is where the CONTENT WRAPPER ends, doesn't include footer-->       
+          </main>  
+            <div class="footer-box">
+              <footer>
+                <p>Code Louisville Front-End Web Development Project 2021</p>
+              </footer>
+            </div><!--This is where the FOOTER DIV ends-->
+  </div><!--This is where the PAGE CONTAINER ends-->
 </body>
 </html>

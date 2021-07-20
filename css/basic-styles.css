@@ -102,7 +102,7 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 /*Style Hero Image - Plants page*/
 .hero-image-plants {
   /* The image used PLUS "linear-gradient" to add a darker transparent layer over the image so text iseasier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Berries.Stylespg.1057t.sigmund-SSHwu_9_EXE-unsplash.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/berries-hero-1800x1200-c.jpg");
   background-color: chartreuse; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -128,9 +128,6 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   padding-top: 10px;
   padding-bottom: 30px;
 }
-
-/*Style ARTICLES (Main)*/
-/*Style FORMS (Main)*/
 
 /*Style Main items on Conditions page only*/
 .conditions-bars {
@@ -180,8 +177,15 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
 }
 
 /*PLANTS page - style Main items*/
-.section-plants{
+.section-plants-container{
   text-align: center;
+}
+
+.plant-pic-center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 /*PLANTS page - style TABLES (Main)*/
