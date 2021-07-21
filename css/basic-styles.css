@@ -121,6 +121,17 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
+/*Style Hero Image - Contact page*/
+.hero-image-contact {
+  /* The image used PLUS "linear-gradient" to add a darker transparent layer over the image so text iseasier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/contact-clematis-hero-1800x1200-c.jpg");
+  background-color: chartreuse; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
 /*Styling Instruction text under each HERO*/
 .main-instructions {
   text-align: center;
@@ -172,8 +183,12 @@ Using this article for reference, https://www.w3schools.com/howto/howto_css_imag
   text-align: center;
 }
 
-.conditions-link {
-  color: black;
+main a,
+main a:link,
+main a:hover,
+main a:visited{
+  color: snow;
+  text-decoration: none;
 }
 
 /*PLANTS page - style Main items*/
@@ -233,28 +248,31 @@ table, th, td {
 }
 
 /*PESTS page - style Main items*/
-/*Container for flexboxes, adjusts all 6 cards*/
-.row-pests {
-  display: flex; 
-  flex-wrap: wrap; 
-}
-
-/*Mobile First! Starting with ONE column.*/
-.column {
-  flex: 100%;
+/*Container for flexboxes, wraps all 6 cards*/
+.pests-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center; 
+  justify-content: center;
   padding: 20px;
 }
 
+/* Create one column to start */
+.pests-columns {
+  flex: 100%;
+  }
+
 /*Tablets and Laptops: Shift from one column to two columns*/
-@media screen and (min-width: 800px) {
-  .column {
+@media screen and (max-width: 768px){
+  .pests-columns {
     flex: 50%;
   }
 }
 
 /*Hi-res laptops, desktops, etc.: Shift from two columns to three columns*/
-@media screen and (min-width: 1200px) {
-  .column {
+@media screen and (max-width: 992px){
+  .pests-columns {
     flex: 33.3%;
   }
 }
@@ -264,21 +282,97 @@ table, th, td {
   box-shadow: 0 6px 12px 0 darkolivegreen;
 }
 
-/* Some left and right padding inside the container */
 .container {
-  padding: 0 16px;
-}
-
-/* Clear floats */
-.container::after, .row-pests::after {
-  content: "";
-  clear: both;
-  display: table;
+  padding-left: 4px;
+  padding-bottom: 10px;
 }
 
 .pest-title {
   color: grey;
   text-align: center;
+}
+
+/*Styles for CONTACT US form, CONTACT page*/
+* {
+  box-sizing: border-box;
+}
+
+form{
+  background-color: blueviolet;
+}
+
+.conditions-h2 {
+  color: snow;
+  text-transform: capitalize;
+}
+
+input[type=text], input[type=email], input[type=radio], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+  color: snow
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-size: medium;
+  margin: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-left: 10px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  padding-right: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 /*Styles for GENERIC items in the Main across pages not broken out above*/

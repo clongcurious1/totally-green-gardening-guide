@@ -35,8 +35,8 @@
                 </div><!--Instructions div now closed-->
 
                 <!--Starting Pest CARDS section-->
-                <div class="row-pests"><!--Wrapper that holds ALL 6 cards-->
-                    <div class="column">
+                <div class="pests-wrapper"><!--Parent wrapper that holds ALL 6 cards-->
+                    <div class="pests-columns"><!--Child element to divide into columns-->
                         <div class="card"><!--wraps Card 1, Aphid-->
                             <img src="../images/pests-aphids-800x800-c.jpg" alt="Aphid" style="width:100%">
                                 <div class="container">
@@ -47,9 +47,7 @@
                                             <p> Non-toxic aphid control measures include spraying affected plants with a hose and planting companion plants that attract beneficial predators.</p>
                                 </div>
                         </div>
-                    </div>
-
-                    <div class="column">
+                                        
                         <div class="card"><!--wraps Card 2, Butterfly-->
                             <img src="../images/pests-butterfly-800x800-c.jpg" alt="Butterfly" style="width:100%">
                                 <div class="container">
@@ -60,9 +58,7 @@
                                         <p> Larval host plants include ironweed, milkweed, hollyhock, and mallow.</p>
                                 </div>
                         </div>
-                    </div>
-
-                    <div class="column">
+                    
                         <div class="card"><!--wraps Card 3, Cutworm-->
                             <img src="../images/pests-cutworm-800x800-c.jpg" alt="Cutworm" style="width:100%">
                                 <div class="container">
@@ -72,9 +68,7 @@
                                         <p> Non-toxic methods of controlling cutworms include aluminum foil plant “collars” at the base of new transplants and planting companion plants to attract beneficial insects (lacewings, parasitic wasps).</p>
                                 </div>
                         </div>
-                    </div>
-                
-                    <div class="column">
+                                        
                         <div class="card"><!--wraps Card 4, Honeybee-->
                             <img src="../images/pests-honeybee-800x800-c.jpg" alt="Honeybee" style="width:100%">
                                 <div class="container">
@@ -84,9 +78,7 @@
                                         <p> Support Honeybees by planting flowers and herbs – like lavender and bluebells - that produce nectar.</p>
                                 </div>
                         </div>
-                    </div>
-
-                    <div class="column">
+                    
                         <div class="card"><!--wraps Card 5, Lacewing-->
                             <img src="../images/pests-lacewing-800x800-c.jpg" alt="Lacewing" style="width:100%">
                                 <div class="container">
@@ -95,10 +87,8 @@
                                         <p>Green lacewing larvae prey upon soft-bodies garden pests, including caterpillars and aphids.</p>
                                         <p>Lacewings and ladybugs can be encouraged to visit by planting candytuft, sunflowers, and marigolds.</p>
                                 </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
+                        </div>                    
+                                   
                         <div class="card"><!--wraps Card 6, Ladybug-->
                             <img src="../images/pests-ladybug-800x800-c.jpg" alt="Ladybug" style="width:100%">
                                 <div class="container">
@@ -107,9 +97,9 @@
                                         <p>Despite their adorable appearance, ladybug (Lady Beetle) larvae are ferocious predators, feasting predominantly on aphids.</p>
                                         <p>Plants that attract ladybugs include Angelica, Chives, Fennel, Statice, and Yarrow.</p>
                                 </div>
-                        </div>
-                    </div>
-                </div><!--This closes the ROW div, see line 39, wraps ALL cards-->
+                        </div>  
+                    </div class="pests-columns">                    
+                </div><!--This closes pests-wrapper, line 38, wraps ALL cards-->
 
         </div><!-- This closes the Content Wrapper for everything but the Footer-->
             </main>  

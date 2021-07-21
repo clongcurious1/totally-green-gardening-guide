@@ -4,41 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totally Green Garden Contact Us Grow With Us</title>
+    <title>Totally Green Gardening Contact Us Grow Along With Us</title>
     <link rel="stylesheet" href="../css/basic-styles.css" type="text/css">
 </head>
-<body>
-    <div class="page-container">
-        <div class="content-wrap">
-            <header>
-                <div class="header">
-                    <a href="index.html" class="logo">Totally Green Gardening Guide</a>
-                        <div class="header-right">
-                            <a href="conditions.html">Conditions</a>
-                            <a href="plants.html">Plants</a>
-                            <a href="pests.html">Pests</a>
-                            <a href="contact.html">Contact</a>
+    <body>
+        <div class="page-container"><!--wraps everything, including the footer-->
+            <div class="content-wrap"><!--wraps elements EXCEPT the footer-->
+                <header>
+                    <div class="header">
+                        <a href="index.html" class="logo">Totally Green Gardening Guide</a>
+                            <div class="header-right">
+                                <a href="conditions.html">Conditions</a>
+                                <a href="plants.html">Plants</a>
+                                <a href="pests.html">Pests</a>
+                                <a href="contact.html">Contact</a>
+                            </div>
+                    </div><!--closes the header div-->
+                </header> 
+
+                <main>
+                    <div class="hero-image-contact">
+                        <div class="hero-text">
+                            <h1 class="hero-h1">Grow Along With Us</h1>
                         </div>
+                    </div>
+
+                    <div class="main-instructions">
+                        <h2>Sign-up to receive Totally Green Gardening tips and event updates via e-mail.</h2>
+                        <h3>Gardening is an extremely satisfying activity with a steep learning curve.</h3>
+                        <h3>Our staff will answer your questions, helping you save time and money.</h3>                
+                    </div>
+
+                    <!--See CSS Media Queries. When screen is less than 600 px wide, labels and text fields stack on top of each other, instead of next to each other-->
+                    <!--Form CSS, see Styles doc, lines 295-358-->
+                        <div class="form-container">    
+                            <form>
+                                <div class="row"> 
+                                    <div class="col-25">                     
+                                        <label for="fname">First Name:</label>
+                                    </div>    
+                                    <div class="col-75">
+                                       <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="lname">Last Name:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="state">State:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="text" id="state" name="state" placeholder="Your state determines your US Garden Zone...">
+                                    </div>
+                                </div>
+                                <!--Need correct email type and id here-->
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="email">E-mail:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <input type="email" id="email" name="email" placeholder="Your e-mail address...">
+                                    </div>
+                                </div>
+                                <!--/Validate button and also need to validate email format + return update/alert-->
+                                <div class="row">
+                                    <input type="submit" value="Validate E-mail Format">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-25">
+                                        <label for="subject">Comment or Question:</label>
+                                    </div>
+                                    <div class="col-75">
+                                        <textarea id="subject" name="subject" placeholder="What's on your mind?" style="height:200px"></textarea>
+                                    </div>
+                                </div>
+  
+                                <div class="row">
+                                    <input type="submit" value="Submit Now to Sign-Up">
+                                </div>
+                            </form>
+                        </div><!--div form-container closes here-->
+            </div><!--closes the content wrapper-->
+                </main>  
+    
+                <div class="footer-box">
+                    <footer>
+                        <p>Code Louisville Front-End Web Development Project 2021</p>
+                    </footer>
                 </div>
-            </header>  
-<main>
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1 class="hero-h1">Grow With Us</h1>
-        </div>
-    </div>
-        <div class="main-instructions">
-            <h2>Sign-up to receive Totally Green gardening news, tips, and special offers.</h2>
-                <p>Please validate your email address and select a few Interests before hitting SUBMIT.</p>
-                <p>Post questions or comments for our staff using the FEEDBACK box.</p>                
-        </div>
-        </div>
-</main>  
-    <div class="footer-box">
-        <footer>
-            <p>Code Louisville Front-End Web Development Project 2021</p>
-        </footer>
-    </div>
-</div>
-</body>
+        </div><!--closes the page container-->
+    </body>
 </html>
