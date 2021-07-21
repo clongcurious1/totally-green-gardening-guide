@@ -1,0 +1,75 @@
+/*Main Styles*/
+.main-header,
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lawngreen
+}
+
+.main-header{
+    padding-top: 2em;
+}
+
+.site-logo{
+    max-height: 100px;
+}
+
+.logo-img{
+    max-height: 90px;
+}
+
+.nav {
+    margin-top: 1.5em;;
+    background-color: lawngreen;
+    font-size: medium;
+}   
+.nav a {
+    display: block;
+    color: black;
+    font-size: 1.125em;
+    font-weight: 300;
+    text-align: center;
+    padding: .4em;
+    border-bottom: 1px solid chartreuse;
+}
+
+.nav a:hover {
+    color: firebrick;
+}
+
+.nav a:hover {
+    color: black; 
+}
+
+/*Media Query for tablets and small laptops*/
+@media (min-width:769px) {
+    .main-header{
+        height: 200px;
+        justify-content: flex-end;
+    }
+    .site-logo {
+        width: 180px;
+    }
+    .nav{
+        margin-top: 3em;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/*Media Query for desktop and beyond*/
+@media (min-width:1025px){
+    .main-header,
+    .site-logo,
+    .nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .site-logo{
+        justify-content: start;
+    }
+    .nav{
+        justify-content: stretch;
+    }
+}

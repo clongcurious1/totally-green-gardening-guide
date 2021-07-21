@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totally Green Gardening Contact Us Grow Along With Us</title>
     <link rel="stylesheet" href="../css/basic-styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/nav.css" type="text/css">
 </head>
     <body>
         <div class="page-container"><!--wraps everything, including the footer-->
             <div class="content-wrap"><!--wraps elements EXCEPT the footer-->
-                <header>
-                    <div class="header">
-                        <a href="index.html" class="logo">Totally Green Gardening Guide</a>
-                            <div class="header-right">
+                <header class="main-header">
+                    <div class="site-logo">
+                        <img src="../images/TTGG-logo-square300-c.jpg" alt="Totally Green Garden Guide logo" class="logo-img"></a>
+                    </div><!--Closes the logo wrapper-->
+                            <div class="nav">
+                                <a href="#">Home</a>
                                 <a href="conditions.html">Conditions</a>
                                 <a href="plants.html">Plants</a>
                                 <a href="pests.html">Pests</a>
                                 <a href="contact.html">Contact</a>
-                            </div>
-                    </div><!--closes the header div-->
+                            </div><!--Closes the nav wrapper-->
                 </header> 
 
                 <main>
@@ -71,7 +73,12 @@
                                         <label for="email">E-mail:</label>
                                     </div>
                                     <div class="col-75">
-                                        <input type="email" id="email" name="email" placeholder="Your e-mail address...">
+                                        <input type="email" id="email" name="email" placeholder="user@example.com"list="defaultEmails" size="64" maxlength="256" multiple required> 
+                                        <datalist id="defaultEmails">
+                                            <option value="shasta.daisy@gmail.com">
+                                            <option value="rose.ofsharon@yahoo.com">
+                                            <option value="sweet.william@gmail.com">
+                                        </datalist>
                                     </div>
                                 </div>
                                 <!--/Validate button and also need to validate email format + return update/alert-->
