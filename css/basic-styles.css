@@ -213,58 +213,40 @@ table, th, td {
   display: none;
 }
 
-/*PESTS page - style Main items*/
-/*Container for flexboxes, wraps all 6 cards*/
-.pests-wrapper,
-.pests-columns,
-.card,
-.container {
-  display: flex;
-    flex-direction: column;
-    align-items: center;
-  padding: 20px;
-}
-
-/*Tablets and Laptops: Shift from one column of 6 cards to two columns, each 3 cards tall*/
-/*I also want all cards to align at the top of each row together - regardless of inner content length.*/
-@media screen and (min-width: 769px){
-.pests-wrapper,
-.pests-columns,
-.card,
-.container {
+/*PESTS page - Mobile-first single column*/
+/*Container for flexboxes, wraps all 6 div "boxes"*/
+.container-ground{
+  width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap:wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: lightslategray;
   padding: 20px;
 }
 
-.pests-columns {
-  flex: 50%;
-}
-
-.card {
+.box-in-container{
+  width:90%;
+  background-color: orange;
   text-align: center;
+  border: black solid 2px;
+  height: 200px;
+  width: 200px; 
 }
 
-/*Hi-res laptops, desktops, etc.: Shift from two columns to three columns*/
-@media screen and (min-width: 1025px){
-  .pests-columns {
-    flex-direction: row;
-  }
-}
-
-/* Add some shadows to create a card effect */
-.card {
-  box-shadow: 0 6px 12px 0 darkolivegreen;
-}
-
-.container {
-  padding-left: 4px;
-  padding-bottom: 10px;
-}
-
-.pest-title {
-  color: grey;
-  text-align: center;
+/*Tablets and Laptops: Attempting to switch from single column to (2) rows that wrap*/
+@media (min-width: 769px) and (max-width: 838px){
+  .container-ground{
+      width: 100%;
+      display: flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      background-color: lightslategray;
+      padding: 20px;
+    }
 }
 
 /*Styles for CONTACT US form, CONTACT page*/
@@ -351,7 +333,6 @@ input[type=submit]:hover {
 }
 
 /*Styles for GENERIC items in the Main across pages not broken out above*/
-
 a { 
   text-decoration: none; 
   color: black
@@ -397,11 +378,11 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            /* Footer height */
+  height: 2.5rem;/* Footer height */
   }
 
- /*Hide the FOOTER on screens smaller than 500px wide*/
- @media screen and (max-width: 500px) {
+/*Hide the FOOTER on screens smaller than 500px wide*/
+@media (max-width: 500px){
   .footer-box {
     display: none;
   }
