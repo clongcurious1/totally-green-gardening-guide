@@ -213,40 +213,40 @@ table, th, td {
   display: none;
 }
 
-/*PESTS page - Mobile-first single column*/
-/*Container for flexboxes, wraps all 6 div "boxes"*/
-.container-ground{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap:wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: lightslategray;
-  padding: 20px;
+/*PESTS page*/ 
+/*Using CSS Grid to go from one-column layout (mobile) to multi-columns (tablets, desktop)*/
+.cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
 }
 
-.box-in-container{
-  width:90%;
-  background-color: orange;
-  text-align: center;
-  border: black solid 2px;
-  height: 200px;
-  width: 200px; 
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 18rem;
 }
 
-/*Tablets and Laptops: Attempting to switch from single column to (2) rows that wrap*/
-@media (min-width: 769px) and (max-width: 838px){
-  .container-ground{
-      width: 100%;
-      display: flex;
-      flex-wrap:wrap;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      background-color: lightslategray;
-      padding: 20px;
-    }
+.responsive-pic{
+  border-radius: 50%;
+  width: 33%;
+  height: auto;
+}
+
+.pests-p {
+  color: white;
+}
+
+/*Media Query creates two columns on screens larger than 600px*/
+@media (min-width: 601px) {
+  .cards-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+/*Media Query creates 3 columns on screens larger than 900px*/
+@media (min-width: 901px) {
+  .cards-container { grid-template-columns: repeat(3, 1fr); }
 }
 
 /*Styles for CONTACT US form, CONTACT page*/
@@ -362,6 +362,10 @@ h2 {
 
 h3 {
   color: rgb(60, 88, 11)
+}
+
+h4 {
+  text-transform: uppercase;
 }
 
 p {
