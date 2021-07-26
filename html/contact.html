@@ -41,7 +41,7 @@
                     <!--See CSS Media Queries. When screen is less than 600 px wide, labels and text fields stack on top of each other, instead of next to each other-->
                     <!--Beginning Form Fields-->
                         <div class="form-container">    
-                            <form name="form1" action="#" onload='document.form1.text1.focus()'>
+                            <form id="form" name="form1" action="#" onload='document.form1.text1.focus()'>
                                 <div class="row"> 
                                     <div class="col-25">                     
                                         <label for="fname">First Name:</label>
@@ -129,6 +129,10 @@
                                         <input type="email" id="email" name="text1" required placeholder="*Required! Please enter a valid email address." size="64" required minlength="8" maxlength="35" multiple required> 
                                     </div>
                                 </div>
+                                <!--Button specifically to run script related to email formatting-->
+                                <div class="row">
+                                    <input type="submit" onclick="ValidateEmail(document.form1.text1)" value="Check Email Address Formatting">
+                                </div>
                                 <!--/Code for Text Box*/-->                      
                                 <div class="row">
                                     <div class="col-25">
@@ -138,11 +142,12 @@
                                         <textarea id="subject" name="subject" maxlength="300" placeholder="What's on your mind?" style="height:250px"></textarea>
                                     </div>
                                 </div>
-  
+                                <!--Code for Submit button + Thanks message-->
                                 <div class="row">
-                                    <input type="submit" onclick="ValidateEmail(document.form1.text1)" value="Submit and Sign-Up">
+                                    <input type="submit" onsubmit="submit(event)" value="Submit and Sign-Up">
                                 </div>
                             </form>
+                            <p id="thanks" hidden>Your data has been received. Thanks!</p>
                         </div><!--div form-container closes here-->
             </div><!--closes the content wrapper-->
                 </main>  

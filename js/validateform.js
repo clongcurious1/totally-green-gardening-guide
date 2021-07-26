@@ -3,8 +3,7 @@ function ValidateEmail(inputText)
 var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 if(inputText.value.match(mailformat))
 {
-alert("Bravo! Your email address is formatted correctly. As this is only a demo site, none of your form data will be submitted to a server.");
-document.form1.text1.focus();
+alert("Bravo! Your email address is formatted correctly."); 
 return true;
 }
 else
@@ -15,3 +14,15 @@ return false;
 }
 }
 
+const form = document.getElementById('form');
+const thanks = document.getElementById('thanks');
+
+form.onsubmit = submit;
+
+function submit(event) {
+  form.setAttribute('hidden', '');
+  thanks.removeAttribute('hidden');
+
+  // For this example, don't actually submit the form
+  event.preventDefault();
+}
