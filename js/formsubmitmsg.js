@@ -1,4 +1,6 @@
-function showAlert() {
-    var myText = "Thank you for helping test this form. In this demonstration, no data was sent to a server.";
-    alert (myText);
-  }
+function thankUser() {
+  var a = document.forms["contact"]["firstname"].value;
+  var b = document.forms["contact"]["lastname"].value;
+
+  alert ("Thank you "+a+" "+b+" for helping test our form. In this demonstration, no data was actually submitted to a server.");
+}
